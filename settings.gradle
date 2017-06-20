@@ -1,1 +1,1 @@
-include ':app', ':hsm'
+include ':simple', ':hsm'
