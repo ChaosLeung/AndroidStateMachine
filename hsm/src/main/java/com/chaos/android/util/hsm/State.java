@@ -1,4 +1,5 @@
 /*
+ * Copyright 2017 Chaos
  * Copyright (C) 2009 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,8 +20,6 @@ package com.chaos.android.util.hsm;
 import android.os.Message;
 
 /**
- * {@hide}
- *
  * The class for implementing states in a StateMachine
  */
 public class State implements IState {

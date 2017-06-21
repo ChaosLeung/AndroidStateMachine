@@ -1,4 +1,5 @@
 /*
+ * Copyright 2017 Chaos
  * Copyright (C) 2011 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,8 +20,6 @@ package com.chaos.android.util.hsm;
 import android.os.Message;
 
 /**
- * {@hide}
- *
  * The interface for implementing states in a {@link StateMachine}
  */
 public interface IState {
@@ -28,12 +27,12 @@ public interface IState {
     /**
      * Returned by processMessage to indicate the the message was processed.
      */
-    static final boolean HANDLED = true;
+    boolean HANDLED = true;
 
     /**
      * Returned by processMessage to indicate the the message was NOT processed.
      */
-    static final boolean NOT_HANDLED = false;
+    boolean NOT_HANDLED = false;
 
     /**
      * Called when a state is entered.
